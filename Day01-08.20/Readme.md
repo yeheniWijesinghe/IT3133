@@ -35,15 +35,24 @@ B = 5
 Three largest numbers:  [ 90, 87, 56 ]
 ```
 
-03 - 
+03 - Break a whole no into digitsblike 4562-> 4,5,6,2
 
 Code
 ```
+let num = 4562;
+let digits = [];
+
+while (num > 0) {
+    let digit = num % 10;        
+    digits.unshift(digit); 
+    num = Math.floor(num / 10); 
+}
 
 ```
 Answer
 ```
-
+C:Day01-08.20>node Entry.js
+[ 4, 5, 6, 2 ]
 ```
 
 04 - 
